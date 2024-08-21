@@ -12,11 +12,13 @@ h1 {
     max-width: 502.5px;
     margin:auto;
     font-size: 39px;
-    font-weight: 600;
+    font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #f80101;
+    background-color: #d30000;
+    color: #000000; 
+    text-shadow: #ffe8e8 0px 0px 40px;
 }
 
 table,
