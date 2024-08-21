@@ -9,8 +9,19 @@ h1 {
     text-align: center;
     align-items: center;
     border: 1px solid black;
-    max-width: 374.5px;
+    max-width: 502.5px;
     margin:auto;
+    font-size: 39px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f80101;
+}
+
+table,
+button {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 table {
@@ -20,6 +31,9 @@ table {
     text-align: center;
     padding-top: -40px;
     border-collapse: collapse;
+    border: 1px solid black;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 
@@ -27,5 +41,60 @@ table thead tr th {
     border: 1px solid black;
     padding-left: 41px;
     padding-right: 41px;
+    width: 160px;
+}
+
+button {
+    background-color:#f80101;
+    border-radius: 3px;
+    color: #ffffff;
+}
+
+#date {
+    background-color: #ffdead;
+}
+
+#time {
+    background-color: #ffeb3b;
+}
+
+#reading {
+    background-color: #d8d8d8;
+}
+
+#add_reading {
+    display: inline;
+    position: relative;
+    bottom: 30px;
+    left: 930px;
+    font-size: 15px;
+}
+
+#add_reading:hover {
+    background-color: #a00000;
+}
+
+#add_reading:hover::after {
+    background-color: #d8d8d8;
+    color:black;
+    border: 1px #000000 solid;
+    padding: 3px;
+    content: "Add Reading";
+    position: absolute;
+    left: 15px;
+    bottom: 5px;
+    min-width: 78px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    z-index: 1;
+}
+
+#top {
     margin: auto;
+    position: relative;
+    left: 580px;
+    top: 20px;
+    font-size: 20px;
+    font-weight: 300;
 }
