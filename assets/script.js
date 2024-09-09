@@ -1,6 +1,6 @@
 // Note: each row is will contain an arrary: date, time, and blood sugar reading
 const currentRow = document.getElementById('row')
-
+console.log(currentRow)
 // variable to find add reading button
 const addReading = document.getElementById('add_reading')
 
@@ -9,7 +9,7 @@ const addReading = document.getElementById('add_reading')
 
 function addRow() {
     for (let i = 0; i < currentRow.length; i++) {
-        console.log(newRow)
+        console.log(currentRow)
         // variables to create new row
         const addNewRow = document.createElement('tr')
         const dateData = document.createElement('td')
