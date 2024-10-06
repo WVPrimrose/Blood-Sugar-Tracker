@@ -8,7 +8,7 @@ const addReading = document.getElementById('add_reading')
 // create function to add row each time event listener is being clicked
 
 function addRow() {
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < currentRow; i++) {
         console.log(currentRow)
         // variables to create new row
         const addNewRow = document.createElement('tr')
