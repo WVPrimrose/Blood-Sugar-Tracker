@@ -8,36 +8,33 @@ const addReading = document.getElementById('add_reading')
 // create function to add row each time event listener is being clicked
 
 function addRow() {
-    for (let i = 0; i < currentRow; i++) {
-        console.log(currentRow)
-        // variables to create new row
-        const addNewRow = document.createElement('tr')
-        const dateData = document.createElement('td')
-        const timeData = document.createElement('td')
-        const readingData = document.createElement('td')
-        
-        addNewRow.setAttribute(
-            'style', 
-            'border: 1px solid black; height: 25px;'
-        )
-        dateData.setAttribute(
-            'style',
-            'border: 1px solid black;'
-        )
+    // variables to create new row
+    const addNewRow = document.createElement('tr')
+    const dateData = document.createElement('td')
+    const timeData = document.createElement('td')
+    const readingData = document.createElement('td')
 
-        timeData.setAttribute(
-            'style',
-            'border: 1px solid black;'
-        )
+    addNewRow.setAttribute(
+        'style',
+        'border: 1px solid black; height: 25px;'
+    )
+    dateData.setAttribute(
+        'style',
+        'border: 1px solid black;'
+    )
 
-        readingData.setAttribute(
-            'style',
-            'border: 1px solid black;'
-        )
-        addNewRow.append(dateData, timeData, readingData)
-        currentRow.append(addNewRow)
-    }
+    timeData.setAttribute(
+        'style',
+        'border: 1px solid black;'
+    )
+
+    readingData.setAttribute(
+        'style',
+        'border: 1px solid black;'
+    )
+    addNewRow.append(dateData, timeData, readingData)
+    currentRow.append(addNewRow)
 }
 
 // event listener to make the button functional
-addReading.addEventListener('click', addRow())
+addReading.addEventListener('click', addRow)
