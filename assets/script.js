@@ -13,6 +13,10 @@ function addRow() {
     const dateData = document.createElement('td')
     const timeData = document.createElement('td')
     const readingData = document.createElement('td')
+    const todayDate = document.createElement('p')
+    todayDate.dayjs()
+    const todayTime = document.createElement('p')
+    todayTime.dayjs()
     const readingInput = document.createElement('input')
 
     addNewRow.setAttribute(
@@ -33,7 +37,24 @@ function addRow() {
         'style',
         'border: 1px solid black;'
     )
+    
+    todayDate.setAttribute(
+        'style',
+        'text-align: center'
+    )
+
+    todayTime.setAttribute(
+        'style',
+        'text-align: center'
+    )
+
+    readingInput.setAttribute(
+        'style',
+        'text-align: center'
+    )
     readingData.append(readingInput)
+    timeData.append(todayTime)
+    dateData.append(todayDate)
     addNewRow.append(dateData, timeData, readingData)
     currentRow.append(addNewRow)
 }
