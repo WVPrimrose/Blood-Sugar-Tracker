@@ -13,6 +13,7 @@ function addRow() {
     const dateData = document.createElement('td')
     const timeData = document.createElement('td')
     const readingData = document.createElement('td')
+    const readingInput = document.createElement('input')
 
     addNewRow.setAttribute(
         'style',
@@ -32,6 +33,7 @@ function addRow() {
         'style',
         'border: 1px solid black;'
     )
+    readingData.append(readingInput)
     addNewRow.append(dateData, timeData, readingData)
     currentRow.append(addNewRow)
 }
